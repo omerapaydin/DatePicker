@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd.MM.yyyy"
         textFieldTarih.text = dateFormatter.string(from: datePicker.date)
-        
+        view.endEditing(true)
         print(datePicker.date)
     }
 
